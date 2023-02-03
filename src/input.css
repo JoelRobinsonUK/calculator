@@ -1,9 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer components {
-    .buttons div {
-      @apply bg-saffron flex justify-center items-center font-serif font-bold text-white text-2xl py-3 drop-shadow-sm hover:drop-shadow-xl
-    }
-  }
