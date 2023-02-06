@@ -5,68 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Zilla+Slab:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-        
+
     <title>Calculator</title>
 </head>
 
-<body class="bg-steel">
-    <div class="calculator flex flex-col mx-auto my-0 w-full lg:w-4/12 h-screen bg-cotton px-9 py-5 rounded-lg drop-shadow-2xl">
-        <h1 class="text-6xl text-center font-serif py-4">Calculator</h1>
-        <div class="results grow flex items-end justify-end overflow-hidden bg-white px-7 py-5 rounded-lg font-serif font-bold text-right text-5xl drop-shadow-xl">
-            <span class="object-bottom truncate">0</span>
+<body>
+    <div class="calculator">
+        <div class="results">
+            0
         </div>
-        <div class="buttons grid grid-cols-4 gap-4 py-9">
-            <div>C</div>
-            <div>*</div>
-            <div>/</div>
-            <div>.</div>
-            <div>7</div>
-            <div>8</div>
-            <div>9</div>
-            <div>+</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>-</div>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div class="row-span-2">=</div>
-            <div class="col-span-3">0</div>
+        <div class="buttons">
+            <div class="btn"><span>C</span></div>
+            <div class="btn"><span>*</span></div>
+            <div class="btn"><span>/</span></div>
+            <div class="btn"><span>.</span></div>
+            <div class="btn"><span>7</span></div>
+            <div class="btn"><span>8</span></div>
+            <div class="btn"><span>9</span></div>
+            <div class="btn"><span>+</span></div>
+            <div class="btn"><span>4</span></div>
+            <div class="btn"><span>5</span></div>
+            <div class="btn"><span>6</span></div>
+            <div class="btn"><span>-</span></div>
+            <div class="btn"><span>1</span></div>
+            <div class="btn"><span>2</span></div>
+            <div class="btn"><span>3</span></div>
+            <div class="btn tall"><span>=</span></div>
+            <div class="btn wide"><span>0</span></div>
         </div>
+        <span>Calculator by Joel Robinson</span>
     </div>
 
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        saffron: '#f48847',
-                        steel: '#282d30',
-                        cotton: '#fee6e4'
-                    },
-                    fontFamily: {
-                        sans: ['Source Sans Pro', 'sans-serif'],
-                        serif: ['Zilla Slab', 'serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style type="text/tailwindcss">
-        @layer components {
-          .buttons div {
-            @apply bg-saffron text-center font-serif font-bold text-white text-2xl py-3 drop-shadow-sm hover:drop-shadow-xl
-          }
-        }
-      </style>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="/logic.js"></script>
 </body>
 
 </html>
