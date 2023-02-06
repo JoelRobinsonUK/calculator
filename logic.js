@@ -2,7 +2,7 @@ const $buttons = document.querySelectorAll(".buttons div");
 
 $buttons.forEach((node) => {
     node.addEventListener("click", (e => {
-        // e.preventDefault();
+        e.preventDefault();
         const value = node.innerText.trim();
         const $results = document.querySelector(".results");
 
