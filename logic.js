@@ -8,6 +8,8 @@ $buttons.forEach((node) => {
 
         const resultText = $results.innerText.trim();
 
+        console.log(value);
+
         if(resultText == "0" || resultText == "undefined" || resultText == "Infinity"){
             $results.innerText = "";
         }
